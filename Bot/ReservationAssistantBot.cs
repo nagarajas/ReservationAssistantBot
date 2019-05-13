@@ -13,14 +13,14 @@ using ReservationAssistant.Dialogs;
 
 namespace ReservationAssistant.Bot
 {
-    public class TableReservationBot : ActivityHandler
+    public class ReservationAssistantBot : ActivityHandler
     {
         readonly UserState userState;
         readonly ConversationState conversationState;
         readonly ReservationOptionsDialog reservationOptionsDialog;
         readonly DialogSet dialogSet;
 
-        public TableReservationBot(ConversationState conversationState,
+        public ReservationAssistantBot(ConversationState conversationState,
                                    UserState userState,
                                    ReservationOptionsDialog reservationOptionsDialog,
                                    TableReservationDialog tableReservationDialog)
